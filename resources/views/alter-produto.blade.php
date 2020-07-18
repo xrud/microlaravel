@@ -33,29 +33,17 @@
                                 <label for="name">Nome</label>
                                 <input type="text" name="name" 
                                        class="form-control" 
-                                       value="{{$product->name or old('name')}}"
+                                       value="{{$product->name}}"
                                        required>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="foto">Foto</label>
-                                <input type="text" 
-                                       accept=".gif,.jpg,.png"
-                                       class="form-control"
-                                       data-toggle="tooltip" 
-                                       data-placement="top"
-                                       title="Usar arquivo com dimensões 300x300 
-                                       - JPG, GIF, PNG"
-                                       value="{{$product->imagem or old('imagem')}}">
-                            </div>   
-                        </div>
+                       
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="description">Descrição</label>
                                 <input type="text" name="description" 
                                        class="form-control" 
-                                       value="{{$product->description or old('description')}}"
+                                       value="{{$product->description}}"
                                        required>
                             </div>
                         </div>
@@ -64,7 +52,7 @@
                                 <label for="quantity">Quantidade</label>
                                 <input type="number" name="quantity" 
                                        class="form-control" 
-                                       value="{{$product->quantity or old('quantity')}}"
+                                       value="{{$product->quantity}}"
                                        required>
                             </div>    
                         </div>                 
@@ -73,7 +61,7 @@
                                 <label for="price">Preço</label>
                                 <input type="text" name="price"                               
                                        class="form-control"
-                                       value="{{$product->price or old('price')}}"
+                                       value="{{$product->price}}"
                                        required>
                             </div>
                         </div>                       
